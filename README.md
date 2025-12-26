@@ -93,18 +93,21 @@ frontend/
 ├── App.jsx
 |── main.jsx 
 
----
 
 # 🧪 How to Run Locally
 ```bash
 npm install
 npm run dev
+
+
 🎯 What This Project Demonstrates
 Real-world authentication handling
 PWA concepts & installability
 Clean UX for habit-forming apps
 State management without heavy backend
 Production deployment workflow
+
+
 🌟 Future Enhancements
 Cloud database (Firebase / Supabase)
 Cross-device sync
