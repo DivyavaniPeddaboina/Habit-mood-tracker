@@ -1,16 +1,118 @@
-# React + Vite
+#  Habit Mood Tracker  
+A Progressive Web App to build habits, track emotions, and reflect daily.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#  Overview
+Habit Mood Tracker is a modern, installable Progressive Web App (PWA) designed to help users:
 
-Currently, two official plugins are available:
+- Build healthy daily habits  
+- Track their mood visually  
+- Reflect through journaling  
+- Maintain streaks and consistency  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app focuses on **simplicity, calm UI, and meaningful daily engagement**.
 
-## React Compiler
+# 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 Deployed App:
+https://euphonious-sunflower-096ccf.netlify.app
 
-## Expanding the ESLint configuration
+👉 Users can install it on desktop and mobile like a native app.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# 📱 Key Features
+
+# 🔐 Authentication (Clerk)
+- Secure email + OTP based authentication
+- Session persistence (no repeated OTPs)
+- Logout via profile menu
+- Production-ready auth flow
+
+# 😊 Mood Tracking
+- Select daily mood using emojis
+- Mood-based motivational quote
+- Mood history stored per day (local persistence)
+
+# ✅ Habit Management
+- Default habits shown for first-time users
+- Add new habits anytime
+- Mark habits as completed (✔)
+- Delete habits (❌)
+- Daily automatic reset of habit completion
+
+# ✍️ Daily Reflection
+- Journal your thoughts every day
+- Saved locally per date
+- Encourages mindfulness and self-reflection
+
+# 🔥 Streak Logic
+- Tracks daily engagement
+- Resets cleanly each day
+- Visual feedback for consistency
+- 
+# 📦 Progressive Web App (PWA)
+- Installable on **desktop & mobile**
+- Offline-ready structure
+- Custom app icon & manifest
+- App opens in standalone window
+-
+
+# 🛠 Tech Stack
+
+Category                        Technology 
+
+ Frontend                       React + Vite 
+ Styling                        Tailwind CSS 
+ Authentication                 Clerk 
+ State Persistence              LocalStorage 
+ Deployment                     Netlify          
+ PWA                            Web App Manifest + Service Worker 
+
+
+# 🧠 Architecture Highlights
+
+- Component-based React architecture
+- Client-side routing
+- Secure auth wrapper around dashboard
+- Local storage for fast, backend-free persistence
+- Clean separation of UI, state, and logic
+
+
+#📂 Project Structure
+frontend/ 
+├── public/ 
+  ├── manifest.json  
+  ├── icon-192.png 
+  ├── icon-512.png 
+  └── sw.js
+├── src/   
+  ├── pages/  
+   ├── Landing.jsx 
+   ├── Login.jsx 
+   ├── Register.jsx 
+   └── Dashboard.jsx 
+├── App.jsx
+|── main.jsx 
+
+---
+
+# 🧪 How to Run Locally
+```bash
+npm install
+npm run dev
+🎯 What This Project Demonstrates
+Real-world authentication handling
+PWA concepts & installability
+Clean UX for habit-forming apps
+State management without heavy backend
+Production deployment workflow
+🌟 Future Enhancements
+Cloud database (Firebase / Supabase)
+Cross-device sync
+Analytics & insights
+Habit reminders (notifications)
+Calendar-based streak tracking
+
+
+📜 License
+This project is open-source and free to use for learning and inspiration.
+
